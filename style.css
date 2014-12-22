@@ -1,0 +1,229 @@
+body{
+		background-color: rgb(42, 62, 89);
+		margin: 0px;
+		padding: 0px;
+		font-size: 16px;
+		font-family: 'Montserrat', sans-serif;
+	}
+	.cont{
+		width: 505px;
+		text-align: center;
+		margin: auto;
+		margin-top: 20px;
+	}
+	.c1,.c2,.c3,.c4{
+		display: block;
+		float: left;
+		width:80px;
+		height: 70px;
+		border-radius: 3px;
+		margin-left: 8px;
+		margin-bottom: 8px;
+		cursor: pointer;
+	}
+	.c1,.cn1{
+		background-color: rgb(166, 191, 84);
+	}
+	.c2,.cn2{
+		background-color: rgb(172, 225, 227);
+	}
+	.c3,.cn3{
+		background-color: rgb(255, 160, 138);
+	}
+	.c4,.cn4{
+		background-color: rgb(255, 221, 85);
+	}
+	textarea{
+		width: 300px;
+		height: 100px;
+		border: 3px solid #ccc;
+		font-size: 20px;
+	}
+	canvas{
+		box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+		border-radius: 10px;
+		background: white;
+	}
+	h1{
+		color: white;
+	}
+	h1 span{
+		font-style: italic;
+		color: rgb(255,234,1);
+		font-weight: normal;
+
+	}
+	button{
+		background-color: rgb(255, 187, 120);
+		font-size: 16px;
+		padding: 10px;
+		border-radius: 5px;
+		color: black;
+		font-family: 'Montserrat', sans-serif;
+		border: 0px;
+		cursor: pointer;
+		width: 150px;
+		border-bottom: 3px solid rgba(0,0,0,0.5);
+	}
+	*{
+		box-sizing: border-box;
+	}
+	.nav,.nav li{
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+	.nav li{
+		display: inline-block;
+		border-radius: 5px;
+		background: rgba(0,0,0,0.5);
+		box-shadow: 0px 0px 10px rgba(0,0,0,0.8) inset;
+		color: #aaa;
+		cursor: pointer;
+		padding: 10px;
+		width: 130px;
+		margin-bottom: 10px;
+		margin-right: 5px;
+	}
+	.nav li.sel{
+		box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+		color: #000;
+		background: white;
+		position: relative;
+	}
+	.nav li.sel:before{
+		position: absolute;
+		width: 0px;
+		height: 0px;
+		font-size: 0px;
+		content: "";
+		border-width: 10px;
+		border-color:white transparent transparent transparent;
+		border-style: solid;
+		bottom: -17px;
+		left: 57px;
+	}
+	.bakkasCreated{
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.bakkasCreated span{
+		
+		width: 130px;
+		height: 200px;
+		display: inline-block;
+		border-radius: 50%;
+		font-size: 14px;
+		color: white;
+	}
+	.bakkasCreated span i{
+		font-size: 18px;
+		background-color: rgb(255, 221, 85);
+		display: inline-block;
+		width: 130px;
+		height: 130px;
+		padding-top: 20px;
+		color: maroon;
+		border-radius: 50%;
+	}
+	.bakkasCreated span i b{
+		font-size: 35px;
+		display: block;
+	}
+	.next{
+		position: absolute;
+		top: 350px;
+		right:20px;
+		display: none;
+		width: 0px;
+		height: 0px;
+		border-width: 30px;
+		border-color:transparent transparent transparent white;
+		border-style: solid;
+		cursor: pointer;
+	}
+	.next:before{
+		position: absolute;
+		top: -30px;
+		right:-27px;
+		width: 0px;
+		height: 0px;
+		border-width: 30px;
+		border-color:transparent transparent transparent black;
+		border-style: solid;
+		cursor: pointer;
+		content: "";
+	}
+	.prev{
+		display: none;
+		position: absolute;
+		top: 350px;
+		left:20px;
+		width: 0px;
+		height: 0px;
+		border-width: 30px;
+		border-color:transparent white transparent transparent ;
+		border-style: solid;
+		cursor: pointer;
+	}
+	.prev:before{
+		position: absolute;
+		top: -30px;
+		left: -27px;
+		content: "";
+		width: 0px;
+		height: 0px;
+		border-width: 30px;
+		border-color:transparent black transparent transparent ;
+		border-style: solid;
+		cursor: pointer;
+	}
+	.logo{
+		background: url("joBaka-logo.png");
+		width: 72px;
+		height: 72px;
+		cursor: pointer;
+		position: fixed;
+		top:0px;
+		left: 0px;
+		z-index: 10000;
+	}
+	.logo.bot{
+		top:inherit;
+		left: inherit;
+		bottom: 5px;
+		right: 5px;
+	}
+	.modalAd{
+		display: block;
+		z-index: 500;
+		display: none;
+		width: 320px;
+		padding: 10px;
+		border: 10px solid rgba(0,0,0,0.1);
+		border-radius: 5px;
+		height: 270px;
+		background: white;
+		position: absolute;
+		top:200px;
+		left: 50%;
+		margin-left: -160px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+	.modalAd cross{
+		background: rgba(0,0,0,0.7);
+		font-size: 20px;
+		font-weight: bold;
+		width: 50px;
+		height: 50px;
+		line-height: 30px;
+		padding: 10px;
+		text-align: center;
+		color: white;
+		top:-10px;
+		right: -10px;
+		position: absolute;
+		cursor: pointer;
+		border-radius: 0 5px 0 10px;
+		z-index: 501;
+	}
