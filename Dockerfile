@@ -1,3 +1,3 @@
-FROM centos:centos6
+FROM ubuntu
 
 MAINTAINER Sanket Mehta <sanket.mehta7@gmail.com>
