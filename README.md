@@ -7,4 +7,4 @@ Replace meme images inside memes folder with the one you want, and call them ins
 Keep images in png (transparent) format to keep background intact.
 Fluid UI makes it mobile comaptible.
 
-Thanks.
+Thanks
