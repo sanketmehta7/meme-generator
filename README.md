@@ -8,6 +8,3 @@ Keep images in png (transparent) format to keep background intact.
 Fluid UI makes it mobile comaptible.
 
 Thanks.
-
-Sanket
-123
